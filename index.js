@@ -54,7 +54,8 @@ async function getData() {
   await page.goto('https://jogabets.co.mz/en/betting/lucky', {waitUntil: 'load', timeout: 0});
 
   const lastValue = await page.evaluate(() => {
-    return document.querySelector('.first-five .ball').innerText;
+//     return document.querySelector('.first-five .ball').innerText;
+    return document.querySelector('.first-five .ball').textContent;
   });
 
   await browser.close();  
