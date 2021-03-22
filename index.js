@@ -10,16 +10,14 @@ database.loadDatabase();
   let arr = '-1';
 
   setInterval(async () => {   
-//     let value = await getData();
-    let value = Math.round(Math.random() * 40);  
+    let value = await getData();
+//     let value = Math.round(Math.random() * 40);  
     let numErr = 0;
     
-    /*
-    while (value === null) {
+    while (value === null || value == null || value === undefined || value == undefined) {
       value = await getData();
       numErr++;
     }
-    */
     
     values.push(value);
     database.insert({date: Date.now(), value});
