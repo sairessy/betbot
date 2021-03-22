@@ -43,6 +43,7 @@ database.loadDatabase();
 //  Get Last drawn ball on jogabets lucky six
 async function getData() {
   const browser = await puppeteer.launch({
+    args: ['--no-sandbox'],
     headless: true
     // executablePath: 'C:/Program Files/Google/Chrome/Application/chrome',
   });
