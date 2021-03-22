@@ -11,7 +11,7 @@ database.loadDatabase();
 
   setInterval(async () => {   
 //     let value = await getData();
-    let value = Math.round(Math.random());  
+    let value = Math.round(Math.random() * 40);  
     let numErr = 0;
     
     /*
