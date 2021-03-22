@@ -10,8 +10,8 @@ database.loadDatabase();
   let arr = '-1';
 
   setInterval(async () => {   
-    let value = await getData();
-    // let value = Math.round(Math.random());  
+//     let value = await getData();
+    let value = Math.round(Math.random());  
     let numErr = 0;
     
     /*
